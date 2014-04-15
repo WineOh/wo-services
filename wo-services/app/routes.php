@@ -15,3 +15,6 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+//Wine API
+Route::get('api/v1/wine/{id}', 'WineController@getWineById');
