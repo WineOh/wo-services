@@ -16,6 +16,7 @@ class CreateNoteTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('user_id')->unsigned();
+			$table->integer('wine_id')->unsigned();
 			$table->text('comment');
 			$table->timestamps();
 		});
