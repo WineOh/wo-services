@@ -14,7 +14,7 @@ class CreateVintageTable extends Migration {
 	{
 		Schema::create('vintage', function(Blueprint $table)
 		{
-			$table->increments('id')->primary();
+			$table->increments('id');
 			$table->integer('name')->unsigned()->unique();
 			$table->timestamps();
 		});

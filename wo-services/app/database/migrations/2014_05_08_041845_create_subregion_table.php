@@ -14,7 +14,7 @@ class CreateSubregionTable extends Migration {
 	{
 		Schema::create('subregion', function(Blueprint $table)
 		{
-			$table->increments('id')->primary();
+			$table->increments('id');
 			$table->string('name')->unique();
 			$table->timestamps();
 		});

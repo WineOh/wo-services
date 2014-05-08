@@ -14,7 +14,7 @@ class CreateGrapeTable extends Migration {
 	{
 		Schema::create('grape', function(Blueprint $table)
 		{
-			$table->increments('id')->primary();
+			$table->increments('id');
 			$table->string('name')->unique();
 			$table->timestamps();
 		});

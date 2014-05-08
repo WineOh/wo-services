@@ -14,7 +14,7 @@ class CreateWineTable extends Migration {
 	{
 		Schema::create('wine', function(Blueprint $table)
 		{
-			$table->increments('id')->primary();
+			$table->increments('id');
 			$table->string('name')->unique();
 			$table->integer('country_id')->unsigned();
 			$table->integer('region_id')->unsigned();
